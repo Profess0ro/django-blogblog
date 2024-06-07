@@ -9,10 +9,10 @@ class About(models.Model):
     profile_image = CloudinaryField('image', default='placeholder')
     updated_on = models.DateTimeField(auto_now=True)
     content = models.TextField()
-    
 
-    def __str__(self):
-        return self.title
+
+def __str__(self):
+    return self.title
 
 
 class CollaborateRequest(models.Model):
